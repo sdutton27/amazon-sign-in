@@ -1,0 +1,264 @@
+/* keep me signed in (checkbox upon checked, layout) / gradient for buttons / scaling / commenting */
+
+body {
+    font-family: "Arial", serif; 
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin:-20px; /* remove whitespace at top of page*/
+}
+
+.flexbox-item {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:36vw;
+    /* width:36vw; */
+    align-self:center;
+    padding:0;
+    margin:0;
+}
+
+.sign-in-item {
+    margin:0;
+}
+
+#logo {
+    justify-self: flex-start;
+    padding-top: 0px;
+    margin-top:0px;
+}
+
+#logo img{
+    width: 30vw;
+    /* center image */
+    border: 0px;
+}
+
+#sign-in {
+    border: 1px solid rgb(227, 227, 227);
+    /*height:57vw;*/ /* make sure this sizes correctly */
+}
+
+#sign-in h1{
+    font-size: 3vw;;
+    padding-left: 3vw;
+    padding-top: 3vw;
+    margin: 0;
+
+    /*font-size: 3vw;
+    padding-left: 2vw;
+    padding-top: 2vw;*/
+
+    /* USE MEDIA QUERIES TO CHANGE SIZE OF THINGS
+    */
+
+    align-self:flex-start;
+}
+
+.email-box {
+}
+
+#email {
+    font-size: 1.3vw;
+    text-align: start;
+}
+
+#input-email {
+    margin-bottom:0;
+    font-size:1.5vw;
+    width:30vw;
+    height:4vw;
+}
+
+.form-label {
+    margin:0;
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(57, 128, 235);
+}
+
+.form-control {
+    width: 90%;
+    margin:auto; /* centers email*/
+    /* height: 4vw; */
+    height: 40%;
+    padding:.5vw; /* height */
+}
+
+.password-box {
+}
+
+.password-text {
+    /*display: inline;*/
+    font-size: 1.3vw;
+    padding-top:0;
+    margin-top:0;
+}
+
+.form-label span {
+    line-height:10px;
+}
+
+#pass-id {
+    display: inline-block;
+    line-height: 1em;
+    vertical-align:left;
+    padding-right: 10vw;
+}
+
+#forgot-pass-id { /* could've done a grid instead */
+    display: inline-block;
+    line-height: 1em;
+    vertical-align:right;
+}
+
+#password__pass {
+    font-size:10px;
+    width:30vw;
+    height:4vw;
+}
+
+button {
+    /* center button*/
+    display:block; 
+    margin: auto;
+    text-align: center;
+    width:30vw;
+    height:4vw;
+
+}
+
+#btn-submit {
+    /* color yellow */
+    background-color:rgb(245, 204, 109);
+    background-image: var(--bs-gradient);
+    margin-top:2vw;
+    margin-bottom:0vw;
+    padding:0vw;
+    font-size: 1.7vw;
+    border: .7px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0)
+}
+
+#conditions-of-use {
+    font-size: 1.28vw;
+    padding-top: 1vw;
+    padding-left: 3vw;
+    padding-right:3vw;
+    text-align:left;
+    line-height: 2.5vw;
+    margin:0;
+    
+}
+
+/* Keep Me Signed In Checkbox container*/
+.form-check {
+    align-self:flex-start;
+    justify-self: middle;
+    
+    display:flex;
+    align-items:center;
+    margin-left:3vw; 
+    margin:0.5vw;
+    height:1vw;
+    padding-bottom:0vw;
+}
+
+.form-check-input {
+
+}
+
+#keep-signed-in-input { /* ALSO MAKE WHEN CLICKED */
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    width: 1vw;
+    height: 1vw;
+    vertical-align: middle;
+    background-color: rgb(232, 232, 232);
+    border:.5px solid grey;
+
+    
+    margin-right: 4px;
+    margin-left: -1.7vw;
+    padding-left:0px;
+    /*margin-top:2.5vw;/* center object */
+    /*position: static;
+    top: -1px;*/
+}
+
+.form-check-label {
+    font-size: 1.7vw;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+.new-to-amazon {
+    line-height:10px;
+    align-self:center;
+    color: rgb(123, 125, 138);
+}
+
+.new-to-amazon hr{
+    display:inline-block;
+    width:40px;
+    height:.5px;
+}
+
+.new-to-amazon p{
+    display:inline-block;
+    width:14vw;
+    font-size:1.2vw;
+    text-align:center;
+    margin-bottom:0px;
+    padding: 0px;
+}
+
+#btn-create-account {
+    background-color: rgb(240, 241, 241);
+    border: .6px solid rgb(63, 63, 63);
+    color:rgb(49, 49, 49);
+    font-size: 1.7vw;
+    margin-top: 1.3vw;
+    margin-bottom: 5vw;
+    text-align:center;
+    padding:0;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
