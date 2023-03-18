@@ -1,74 +1,66 @@
-/* keep me signed in (checkbox upon checked, layout) / gradient for buttons / scaling / commenting */
+/* Simon Dutton
+ * main.css is the CSS file for the styles of the 
+ * Amazon sign-in website.
+*/
 
+/* body */
 body {
     font-family: "Arial", serif; 
 }
 
+/* flexbox container */
 .flexbox-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    margin:-20px; /* remove whitespace at top of page*/
+    margin:-28px; /* remove whitespace at top of page*/
 }
 
+/* flexbox items */
 .flexbox-item {
     display:flex;
     flex-direction:column;
     align-items: center;
     width:36vw;
-    /* width:36vw; */
     align-self:center;
     padding:0;
     margin:0;
 }
 
-.sign-in-item {
-    margin:0;
-}
-
+/* Logo container */
 #logo {
     justify-self: flex-start;
-    padding-top: 0px;
-    margin-top:0px;
 }
 
+/* Logo image */
 #logo img{
-    width: 30vw;
-    /* center image */
-    border: 0px;
+    width: 26vw;
 }
 
+/* Sign-In container */
 #sign-in {
     border: 1px solid rgb(227, 227, 227);
-    /*height:57vw;*/ /* make sure this sizes correctly */
 }
 
+/* Sign-In heading (text)*/
 #sign-in h1{
     font-size: 3vw;;
     padding-left: 3vw;
     padding-top: 3vw;
     margin: 0;
 
-    /*font-size: 3vw;
-    padding-left: 2vw;
-    padding-top: 2vw;*/
-
-    /* USE MEDIA QUERIES TO CHANGE SIZE OF THINGS
-    */
-
     align-self:flex-start;
 }
 
-.email-box {
-}
-
+/* Email label */
 #email {
     font-size: 1.3vw;
     text-align: start;
 }
 
+/* Email input box */
 #input-email {
     margin-bottom:0;
     font-size:1.5vw;
@@ -76,38 +68,36 @@ body {
     height:4vw;
 }
 
+/* Email and password labels */
 .form-label {
+    /* less margin and padding */
     margin:0;
     padding-top: 0;
 }
 
+/* Email and password inputs */
+.form-control {
+    margin:auto;
+    padding:.5vw; /* height */
+}
+
+/* Links */
 a {
     text-decoration: none;
     color:rgb(57, 128, 235);
 }
 
-.form-control {
-    width: 90%;
-    margin:auto; /* centers email*/
-    /* height: 4vw; */
-    height: 40%;
-    padding:.5vw; /* height */
-}
-
-.password-box {
-}
-
+/* container for text for label above password input */
 .password-text {
-    /*display: inline;*/
     font-size: 1.3vw;
-    padding-top:0;
-    margin-top:0;
 }
 
+/* text for label above password input */
 .form-label span {
-    line-height:10px;
+    line-height:1vw;
 }
 
+/* password label */
 #pass-id {
     display: inline-block;
     line-height: 1em;
@@ -115,30 +105,32 @@ a {
     padding-right: 10vw;
 }
 
+/* forgot password link */
 #forgot-pass-id { /* could've done a grid instead */
     display: inline-block;
     line-height: 1em;
     vertical-align:right;
 }
 
+/* password input */
 #password__pass {
-    font-size:10px;
+    font-size:2vw;
     width:30vw;
     height:4vw;
 }
 
+/* All buttons */
 button {
-    /* center button*/
+    /* center button in container */
     display:block; 
     margin: auto;
     text-align: center;
     width:30vw;
     height:4vw;
-
 }
 
+/* Sign-in button */
 #btn-submit {
-    /* color yellow */
     background-color:rgb(245, 204, 109);
     background-image: var(--bs-gradient);
     margin-top:2vw;
@@ -149,6 +141,7 @@ button {
     color:rgb(0, 0, 0)
 }
 
+/* Conditions of use text */
 #conditions-of-use {
     font-size: 1.28vw;
     padding-top: 1vw;
@@ -160,24 +153,20 @@ button {
     
 }
 
-/* Keep Me Signed In Checkbox container*/
+/* "Keep Me Signed In" Checkbox container*/
 .form-check {
     align-self:flex-start;
-    justify-self: middle;
+    justify-self: center;
     
     display:flex;
     align-items:center;
-    margin-left:3vw; 
-    margin:0.5vw;
-    height:1vw;
-    padding-bottom:0vw;
+    margin-left:3vw;
+    height:4vw;
+    width:30vw;
 }
 
-.form-check-input {
-
-}
-
-#keep-signed-in-input { /* ALSO MAKE WHEN CLICKED */
+/* checkbox item */
+#keep-signed-in-input { 
     vertical-align: middle;
     position: relative;
     bottom: 1px;
@@ -186,34 +175,35 @@ button {
     vertical-align: middle;
     background-color: rgb(232, 232, 232);
     border:.5px solid grey;
-
-    
-    margin-right: 4px;
-    margin-left: -1.7vw;
-    padding-left:0px;
-    /*margin-top:2.5vw;/* center object */
-    /*position: static;
-    top: -1px;*/
 }
 
+/* when checkbox is checked */
+#keep-signed-in-input:checked {
+    background-color:rgb(0, 0, 0);
+}
+
+/* label next to checkbox */
 .form-check-label {
     font-size: 1.7vw;
-    margin-left:0px;
-    padding-left:0px;
+    margin-left:0;
+    padding-left:4px;
 }
 
+/* new to amazon divider class */
 .new-to-amazon {
-    line-height:10px;
+    line-height:1vw;
     align-self:center;
     color: rgb(123, 125, 138);
 }
 
+/* lines next to "New To Amazon?" */
 .new-to-amazon hr{
     display:inline-block;
-    width:40px;
-    height:.5px;
+    width:8vw;
+    height:.05vw;
 }
 
+/* "New To Amazon?" text */
 .new-to-amazon p{
     display:inline-block;
     width:14vw;
@@ -223,6 +213,7 @@ button {
     padding: 0px;
 }
 
+/* create account button */
 #btn-create-account {
     background-color: rgb(240, 241, 241);
     border: .6px solid rgb(63, 63, 63);
@@ -232,33 +223,4 @@ button {
     margin-bottom: 5vw;
     text-align:center;
     padding:0;
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 576px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
 }
